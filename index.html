@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="portfolioApp" ng-controller="appController">
+  <head>
+    <meta charset="utf-8">
+    <base href="/">
+    <title>Mike Christensen | Full Stack Developer</title>
+    <meta name="description" content="Mike Christensen's developer portfolio.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Open Graph tags (for e.g. proper display when link shared on Facebook) -->
+    <meta name="og:type" property="og:type" content="website" />
+    <!--<meta name="og:image" property="og:image" content="/images/logo-dark.png" />-->
+    <meta name="og:title" property="og:title" content="Mike Christensen | Full Stack Developer" />
+    <meta name="og:description" property="og:description" content="Mike Christensen's developer portfolio." />
+    <meta name="og:url" property="og:url" content="https://MikeC1995.github.io"/>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/assets/styles/app.css">
+  </head>
+
+  <body>
+    <div header></div>
+
+    <div id="content">
+      <div ng-controller="mainController" ng-include="'/app/components/main/mainView.html'"></div>
+    </div>
+
+    <div footer></div>
+
+    <!-- Dependencies -->
+    <script src="/dependencies/angular.min.js"></script>
+    <script src="/dependencies/angular-route.min.js"></script>
+
+    <!-- Scripts -->
+    <script src="/app/app.js"></script>
+    <script src="/app/appController.js"></script>
+    <script src="/app/components/main/mainController.js"></script>
+  </body>
+</html>
