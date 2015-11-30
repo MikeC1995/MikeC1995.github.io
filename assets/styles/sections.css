@@ -1,1 +1,13 @@
 /* Section styles */
+.section {
+  width: 100%;
+  padding: 100px 0 100px 0;
+}
+#mainSection {
+  height: 50%;
+  text-align: center;
+}
+#mainSection .subtitle {
+  margin-top: 5px;
+  letter-spacing: 10px;
+}
