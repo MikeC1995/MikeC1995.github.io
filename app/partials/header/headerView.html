@@ -4,11 +4,8 @@
       <img src="/assets/images/linkedin.png">
       <img src="/assets/images/github.png">
     </div>
-    <ul id="nav-links" class="clear">
-      <li><a>SKILLS</a></li>
-      <li><a>PROJECTS</a></li>
-      <li><a>CONTACT</a></li>
-      <li><a>CV</a></li>
+    <ul id="nav-links">
+      <li ng-repeat="(item, link) in navItems"><a href="{{ link }}">{{ item }}</a></li>
     </ul>
   </div>
 

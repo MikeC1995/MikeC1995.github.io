@@ -6,9 +6,9 @@ portfolioApp.controller('appController', ['$scope', function ($scope) {
 
   // Set nav items
   $scope.navItems = {
-    'Skills': '/skills',
-    'Projects': '/projects',
-    'Contact': '/contact',
-    'CV': '/cv'
+    'Skills': '#skills',
+    'Projects': '#projects',
+    'Contact': '#contact',
+    'CV': '#cv'
   };
 }]);

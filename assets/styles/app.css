@@ -44,27 +44,24 @@ a {
 /* Section styles */
 .section {
   width: 100%;
-  padding: 100px 0 100px 0;
+  padding: 40px 0 40px 0;
 }
-/*
-#mainSection {
-  height: 50%;
-  background-color: @header;
-  color: @text-light;
+.section-title {
+  font-size: 25px;
+  font-weight: 200;
   text-align: center;
-  .subtitle {
-    margin-top: 5px;
-    letter-spacing: 10px;
-  }
+  letter-spacing: 1px;
 }
-*/
+#mainSection {
+  background-color: #eeeeee;
+}
 #header {
   width: 100%;
   color: #eeeeee;
   background-color: #34495e;
 }
 #header.bigHeader {
-  height: 500px;
+  height: 800px;
 }
 #header:not(.bigHeader) {
   height: 90px;
