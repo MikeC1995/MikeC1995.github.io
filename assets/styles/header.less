@@ -1,45 +1,80 @@
 #header {
-  display: table;
-  white-space: nowrap;
-  background-color: @header;
-  color: @text-light;
   width: 100%;
-  height: 50px;
+  color: @text-light;
+  background-color: @header;
 
-  div {
-    display: table-cell;
-    white-space: normal;
+  &.bigHeader {
+    height: 500px;
+  }
+  &:not(.bigHeader) {
+    height: 90px;
+  }
+
+  #navigation {
+    position: absolute;
+    width: 100%;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    z-index: 1001;
+  }
+
+  #social-networks {
+    float: left;
+    margin-top: 5px;
+    img {
+      height: 25px;
+      padding-right: 40px;
+    }
+  }
+
+  #nav-links {
+    float: right;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1px;
+    li {
+      display: inline-block;
+      margin-left: 20px;
+      a {
+        padding: 10px;
+        color: #fff;
+      }
+    }
+  }
+
+  #strapline {
+    pointer-events: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
+    &:before {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+  }
+
+  #strapline-content {
+    display: inline-block;
     vertical-align: middle;
+    width: 80%;
   }
 
-  #left {
-    height: 100%;
-    width: 50%;
-    #networks {
-      width: 100%;
-      height: 50%;
-      padding-left: 20px;
-      img {
-        height: 20px;
-        width: auto;
-        padding-right: 20px;
-      }
-    }
+  #strap-top {
+    font-size: 60px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-bottom: 10px;
   }
 
-  #right {
-    height: 100%;
-    width: 50%;
-    #nav-links {
-      float: right;
-      height: 50%;
-      padding-right: 50px;
-      span {
-        font-size: 20px;
-        height: 50%;
-        width: 50%;
-        padding-left: 100px;
-      }
-    }
+  #strap-centre {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 10px;
+    line-height: 38px;
   }
 }

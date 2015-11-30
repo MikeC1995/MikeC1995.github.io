@@ -46,55 +46,87 @@ a {
   width: 100%;
   padding: 100px 0 100px 0;
 }
+/*
 #mainSection {
   height: 50%;
-  background-color: #34495e;
-  color: #eeeeee;
+  background-color: @header;
+  color: @text-light;
   text-align: center;
+  .subtitle {
+    margin-top: 5px;
+    letter-spacing: 10px;
+  }
 }
-#mainSection .subtitle {
-  margin-top: 5px;
-  letter-spacing: 10px;
-}
+*/
 #header {
-  display: table;
-  white-space: nowrap;
-  background-color: #34495e;
-  color: #eeeeee;
   width: 100%;
-  height: 50px;
+  color: #eeeeee;
+  background-color: #34495e;
 }
-#header div {
-  display: table-cell;
-  white-space: normal;
+#header.bigHeader {
+  height: 500px;
+}
+#header:not(.bigHeader) {
+  height: 90px;
+}
+#header #navigation {
+  position: absolute;
+  width: 100%;
+  padding: 20px 50px;
+  box-sizing: border-box;
+  z-index: 1001;
+}
+#header #social-networks {
+  float: left;
+  margin-top: 5px;
+}
+#header #social-networks img {
+  height: 25px;
+  padding-right: 40px;
+}
+#header #nav-links {
+  float: right;
+  list-style-type: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+#header #nav-links li {
+  display: inline-block;
+  margin-left: 20px;
+}
+#header #nav-links li a {
+  padding: 10px;
+  color: #fff;
+}
+#header #strapline {
+  pointer-events: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  z-index: 1000;
+}
+#header #strapline:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
   vertical-align: middle;
 }
-#header #left {
-  height: 100%;
-  width: 50%;
+#header #strapline-content {
+  display: inline-block;
+  vertical-align: middle;
+  width: 80%;
 }
-#header #left #networks {
-  width: 100%;
-  height: 50%;
-  padding-left: 20px;
+#header #strap-top {
+  font-size: 60px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
-#header #left #networks img {
-  height: 20px;
-  width: auto;
-  padding-right: 20px;
-}
-#header #right {
-  height: 100%;
-  width: 50%;
-}
-#header #right #nav-links {
-  float: right;
-  height: 50%;
-  padding-right: 50px;
-}
-#header #right #nav-links span {
+#header #strap-centre {
   font-size: 20px;
-  height: 50%;
-  width: 50%;
-  padding-left: 100px;
+  font-weight: 500;
+  letter-spacing: 10px;
+  line-height: 38px;
 }
