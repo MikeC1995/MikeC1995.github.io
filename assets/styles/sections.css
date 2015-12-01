@@ -3,11 +3,11 @@
   width: 100%;
   padding: 100px 0 100px 0;
 }
-#mainSection {
+#skills-section {
   height: 50%;
   text-align: center;
 }
-#mainSection .subtitle {
+#skills-section .subtitle {
   margin-top: 5px;
   letter-spacing: 10px;
 }

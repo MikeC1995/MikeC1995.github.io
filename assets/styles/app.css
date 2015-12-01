@@ -47,23 +47,41 @@ a {
   padding: 40px 0 40px 0;
 }
 .section-title {
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 200;
   text-align: center;
   letter-spacing: 1px;
+  padding: 20px 0;
 }
-#mainSection {
+#skills-section {
   background-color: #eeeeee;
+}
+#skills-section .iconList {
+  text-align: center;
+  padding: 40px 0;
+}
+#skills-section .iconList .skill {
+  display: inline-block;
+  width: 100px;
+  height: auto;
+  padding: 0 30px;
+}
+#skills-section .iconList .skill img {
+  padding-bottom: 10px;
+}
+#skills-section .iconList .skill span {
+  font-weight: 200;
+  font-size: 16px;
 }
 #header {
   width: 100%;
   color: #eeeeee;
   background-color: #34495e;
 }
-#header.bigHeader {
-  height: 800px;
+#header.big-header {
+  height: 600px;
 }
-#header:not(.bigHeader) {
+#header:not(.big-header) {
   height: 90px;
 }
 #header #navigation {
