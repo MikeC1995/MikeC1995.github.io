@@ -1,8 +1,13 @@
 <div id="header" class="big-header" boids-canvas>
   <div id="navigation">
     <div id="social-networks">
-      <img src="/assets/images/linkedin.png">
-      <img src="/assets/images/github.png">
+      <!-- target=_blank opens in new tab -->
+      <a href="https://www.linkedin.com/in/mikescottchristensen" target="_blank">
+        <img src="/assets/images/linkedin.png">
+      </a>
+      <a href="https://github.com/MikeC1995" target="_blank">
+        <img src="/assets/images/github.png">
+      </a>
     </div>
     <ul id="nav-links">
       <li ng-repeat="(item, link) in navItems"><a href="{{ link }}">{{ item }}</a></li>
