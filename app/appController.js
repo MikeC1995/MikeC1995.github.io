@@ -8,7 +8,7 @@ portfolioApp.controller('appController', ['$scope', function ($scope) {
   $scope.navItems = {
     'Skills': '#skills-section',
     'Projects': '#projects-section',
-    'Contact': '#contact',
+    'Contact': '#contact-section',
     'CV': 'assets/documents/cv.pdf'
   };
 }]);

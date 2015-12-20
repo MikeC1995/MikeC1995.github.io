@@ -53,6 +53,13 @@ a {
   letter-spacing: 1px;
   padding: 20px 0;
 }
+.section-text {
+  font-size: 18px;
+  font-weight: 200;
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 20px 0;
+}
 #skills-section {
   background-color: #eeeeee;
 }
@@ -115,6 +122,49 @@ a {
 #projects-section .projectList .project img {
   height: 100%;
   width: auto;
+}
+#contact-section {
+  background-color: #eeeeee;
+}
+#contact-section .section-title {
+  font-weight: 400;
+}
+#contact-section input,
+#contact-section textarea {
+  display: block;
+  width: 40%;
+  min-width: 600px;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 200;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#contact-section input:not([type="submit"]),
+#contact-section textarea {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+#contact-section input[type="submit"] {
+  text-transform: uppercase;
+  background-color: inherit;
+  border: 2px solid #34495e;
+  color: #34495e;
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+#contact-section input[type="submit"]:hover {
+  background-color: #34495e;
+  color: #fff;
+  cursor: hand;
+  cursor: pointer;
+}
+#contact-section textarea {
+  resize: vertical;
+  margin-bottom: 30px;
 }
 #header {
   width: 100%;
