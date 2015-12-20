@@ -9,6 +9,6 @@ portfolioApp.controller('appController', ['$scope', function ($scope) {
     'Skills': '#skills-section',
     'Projects': '#projects-section',
     'Contact': '#contact',
-    'CV': 'cv'
+    'CV': 'assets/documents/cv.pdf'
   };
 }]);
