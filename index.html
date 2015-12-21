@@ -18,12 +18,16 @@
   </head>
 
   <body>
+    <!-- TODO:: make this just contain an ngview, and use angular routing! See CSS website.
+         Then, submit form can route to /thanks and display the corresponding view! -->
+
     <div header></div>
 
-    <div id="content">
+    <div id="content" ng-controller="autoScrollController">
       <div class="section" id="skills-section" ng-controller="skillsController" ng-include="'/app/components/skills/skillsView.html'"></div>
       <div class="section" id="projects-section" ng-controller="projectsController" ng-include="'/app/components/projects/projectsView.html'"></div>
-      <div class="section" id="contact-section" ng-include="'/app/components/contact/contactView.html'"></div>
+      <div class="section" id="contact-section" ng-controller="contactController" ng-show="path != '/thanks'" ng-include="'/app/components/contact/contactView.html'"></div>
+      <div class="section" id="thanks-section" ng-controller="contactController" ng-show="path == '/thanks'" ng-include="'/app/components/contact/thanksView.html'"></div>
     </div>
 
     <div footer></div>
@@ -39,6 +43,8 @@
     <script src="/app/appController.js"></script>
     <script src="/app/components/skills/skillsController.js"></script>
     <script src="/app/components/projects/projectsController.js"></script>
+    <script src="/app/components/contact/contactController.js"></script>
+    <script src="/app/partials/autoScrollController.js"></script>
 
     <script src="/app/partials/header/headerDirective.js"></script>
     <script src="/app/partials/header/headerController.js"></script>
