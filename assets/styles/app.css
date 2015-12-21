@@ -168,6 +168,7 @@ a {
 }
 #header {
   width: 100%;
+  height: 600px;
   color: #eeeeee;
   background-color: #34495e;
 }
@@ -202,9 +203,6 @@ a {
   padding: 10px;
   color: #fff;
 }
-#header.big-header {
-  height: 600px;
-}
 #header.big-header #strapline {
   pointer-events: none;
   position: absolute;
@@ -235,13 +233,6 @@ a {
   font-weight: 500;
   letter-spacing: 10px;
   line-height: 38px;
-}
-#header:not(.big-header) {
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
 }
 #header:not(.big-header) #strapline-content {
   display: none;

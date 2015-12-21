@@ -10,7 +10,7 @@ portfolioApp.directive('scrollTo', function() {
         var divId = attrs.scrollTo;
         angular.element('html,body').animate({
           // select the element the href points to
-          scrollTop: angular.element(divId).offset().top
+          scrollTop: angular.element(divId).offset().top - angular.element('#navigation').outerHeight()
         }, 1000);
       });
     }
