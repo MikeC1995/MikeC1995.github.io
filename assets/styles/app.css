@@ -272,7 +272,6 @@ a {
   color: #fff;
   box-sizing: border-box;
   padding: 0 40px;
-  background: #4CAF50;
 }
 #project-detail #project-left #project-title {
   font-size: 60px;
@@ -296,8 +295,6 @@ a {
   height: 50px;
 }
 #project-detail #project-left .button:hover {
-  background-color: #fff;
-  color: #4CAF50;
   cursor: hand;
   cursor: pointer;
 }
