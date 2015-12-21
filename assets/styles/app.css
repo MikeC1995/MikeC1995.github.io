@@ -303,6 +303,7 @@ a {
   float: right;
   height: 100%;
   width: 60%;
+  text-align: center;
   box-sizing: border-box;
   background-color: #dddddd;
 }
@@ -314,4 +315,15 @@ a {
   height: auto;
   cursor: hand;
   cursor: pointer;
+  z-index: 1001;
+}
+#project-detail #project-right #project-graphic {
+  width: 80%;
+  height: auto;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
