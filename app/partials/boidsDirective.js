@@ -2,7 +2,7 @@
 
 var portfolioApp = angular.module('portfolioApp');
 
-portfolioApp.directive('boidsCanvas', function () {
+portfolioApp.directive('boidsCanvas', function ($window) {
   return {
     restrict: 'A',
     link: function (scope, element, attrs) {

@@ -3,15 +3,9 @@
   color: @text-light;
   background-color: @header;
 
-  &.big-header {
-    height: 600px;
-  }
-  &:not(.big-header) {
-    height: 90px;
-  }
-
   #navigation {
-    position: absolute;
+    position: fixed;
+    top: 0;
     width: 100%;
     padding: 20px 50px;
     box-sizing: border-box;
@@ -43,38 +37,54 @@
     }
   }
 
-  #strapline {
-    pointer-events: none;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    z-index: 1000;
-    &:before {
-      content: '';
-      display: inline-block;
+  &.big-header {
+    height: 600px;
+    #strapline {
+      pointer-events: none;
+      position: absolute;
       height: 100%;
+      width: 100%;
+      text-align: center;
+      z-index: 1000;
+      &:before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+      }
+    }
+
+    #strapline-content {
+      display: inline-block;
       vertical-align: middle;
+      width: 80%;
+    }
+
+    #strap-top {
+      font-size: 60px;
+      letter-spacing: 2px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    #strap-centre {
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: 10px;
+      line-height: 38px;
     }
   }
 
-  #strapline-content {
-    display: inline-block;
-    vertical-align: middle;
-    width: 80%;
-  }
-
-  #strap-top {
-    font-size: 60px;
-    letter-spacing: 2px;
-    font-weight: 700;
-    margin-bottom: 10px;
-  }
-
-  #strap-centre {
-    font-size: 20px;
-    font-weight: 500;
-    letter-spacing: 10px;
-    line-height: 38px;
+  &:not(.big-header) {
+    //height: 0px;
+    #strapline-content {
+      display: none;
+    }
+    #navigation {
+      background-color: @header;
+    }
+    canvas {
+      display: none;
+    }
   }
 }

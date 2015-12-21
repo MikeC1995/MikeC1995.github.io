@@ -171,14 +171,9 @@ a {
   color: #eeeeee;
   background-color: #34495e;
 }
-#header.big-header {
-  height: 600px;
-}
-#header:not(.big-header) {
-  height: 90px;
-}
 #header #navigation {
-  position: absolute;
+  position: fixed;
+  top: 0;
   width: 100%;
   padding: 20px 50px;
   box-sizing: border-box;
@@ -207,7 +202,10 @@ a {
   padding: 10px;
   color: #fff;
 }
-#header #strapline {
+#header.big-header {
+  height: 600px;
+}
+#header.big-header #strapline {
   pointer-events: none;
   position: absolute;
   height: 100%;
@@ -215,26 +213,35 @@ a {
   text-align: center;
   z-index: 1000;
 }
-#header #strapline:before {
+#header.big-header #strapline:before {
   content: '';
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
-#header #strapline-content {
+#header.big-header #strapline-content {
   display: inline-block;
   vertical-align: middle;
   width: 80%;
 }
-#header #strap-top {
+#header.big-header #strap-top {
   font-size: 60px;
   letter-spacing: 2px;
   font-weight: 700;
   margin-bottom: 10px;
 }
-#header #strap-centre {
+#header.big-header #strap-centre {
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 10px;
   line-height: 38px;
+}
+#header:not(.big-header) #strapline-content {
+  display: none;
+}
+#header:not(.big-header) #navigation {
+  background-color: #34495e;
+}
+#header:not(.big-header) canvas {
+  display: none;
 }
