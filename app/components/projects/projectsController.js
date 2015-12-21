@@ -66,7 +66,7 @@ portfolioApp.controller('projectsController', ['$scope', function ($scope) {
   };
 
   $scope.currentProject = {
-    isOpen: true,
+    isOpen: false,
     name: 'Ocean Blue Software'
   }
 
