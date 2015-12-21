@@ -178,7 +178,7 @@ a {
   width: 100%;
   padding: 20px 50px;
   box-sizing: border-box;
-  z-index: 1001;
+  z-index: 500;
 }
 #header #social-networks {
   float: left;
@@ -242,4 +242,65 @@ a {
 }
 #header:not(.big-header) canvas {
   display: none;
+}
+#project-detail {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+#project-detail #project-left {
+  position: relative;
+  float: left;
+  height: 100%;
+  width: 40%;
+  text-align: center;
+  color: #fff;
+  box-sizing: border-box;
+  padding: 0 40px;
+  background: #4CAF50;
+}
+#project-detail #project-left #project-title {
+  font-size: 60px;
+  font-weight: 600;
+  padding: 100px 0;
+}
+#project-detail #project-left #project-description {
+  font-size: 20px;
+  font-weight: 300;
+}
+#project-detail #project-left .button {
+  position: absolute;
+  bottom: 100px;
+  left: calc(50% - 100px);
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  border: 2px solid #fff;
+  width: 200px;
+  height: 50px;
+}
+#project-detail #project-left .button:hover {
+  background-color: #fff;
+  color: #4CAF50;
+  cursor: hand;
+  cursor: pointer;
+}
+#project-detail #project-right {
+  float: right;
+  height: 100%;
+  width: 60%;
+  box-sizing: border-box;
+  background-color: #dddddd;
+}
+#project-detail #project-right #close-icon {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  width: 50px;
+  height: auto;
+  cursor: hand;
+  cursor: pointer;
 }

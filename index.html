@@ -28,6 +28,7 @@
       <div class="section" id="projects-section" ng-controller="projectsController" ng-include="'/app/components/projects/projectsView.html'"></div>
       <div class="section" id="contact-section" ng-controller="contactController" ng-show="path != '/thanks'" ng-include="'/app/components/contact/contactView.html'"></div>
       <div class="section" id="thanks-section" ng-controller="contactController" ng-show="path == '/thanks'" ng-include="'/app/components/contact/thanksView.html'"></div>
+      <div id="project-detail" ng-controller="projectsController" ng-include="'/app/components/projects/projectDetailsView.html'"></div>
     </div>
 
     <div footer></div>
