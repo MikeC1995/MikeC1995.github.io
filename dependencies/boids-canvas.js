@@ -287,18 +287,7 @@ BoidsCanvas.prototype.init = function() {
   });
 
   // Add resize listener to canvas
-  window.addEventListener('resize', function () {
-    // Check if div has changed size
-    if (this.canvasDiv.offsetWidth === this.canvasDiv.size.width && this.canvasDiv.offsetHeight === this.canvasDiv.size.height) {
-      return false;
-    }
-
-    // Scale canvas
-    this.canvas.width = this.canvasDiv.size.width = this.canvasDiv.offsetWidth;
-    this.canvas.height = this.canvasDiv.size.height = this.canvasDiv.offsetHeight;
-
-    this.initialiseBoids();
-  }.bind(this));
+  window.addEventListener('resize', this.resize.bind(this));
 
   this.initialiseBoids();
 
@@ -313,6 +302,20 @@ BoidsCanvas.prototype.init = function() {
 
   // Update canvas
   requestAnimationFrame(this.update.bind(this));
+}
+
+BoidsCanvas.prototype.resize = function () {
+  console.log("resize");
+  // Check if div has changed size
+  if (this.canvasDiv.offsetWidth === this.canvasDiv.size.width && this.canvasDiv.offsetHeight === this.canvasDiv.size.height) {
+    return false;
+  }
+
+  // Scale canvas
+  this.canvas.width = this.canvasDiv.size.width = this.canvasDiv.offsetWidth;
+  this.canvas.height = this.canvasDiv.size.height = this.canvasDiv.offsetHeight;
+
+  this.initialiseBoids();
 }
 
 // Initialise boids according to options

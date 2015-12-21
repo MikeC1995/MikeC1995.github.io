@@ -236,6 +236,13 @@ a {
   letter-spacing: 10px;
   line-height: 38px;
 }
+#header:not(.big-header) {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
 #header:not(.big-header) #strapline-content {
   display: none;
 }
