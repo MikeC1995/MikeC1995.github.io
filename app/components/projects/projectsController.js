@@ -15,4 +15,9 @@ portfolioApp.controller('projectsController', ['$scope', function ($scope) {
     'HairBeaut': rootPath + 'hairbeaut/thumb.png',
     'Student Robotics': rootPath + 'sr/thumb.png'
   };
+
+  $scope.currentProject = {
+    isOpen: true
+  }
+
 }]);
