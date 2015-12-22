@@ -344,6 +344,7 @@ a {
   cursor: hand;
   cursor: pointer;
   z-index: 1001;
+  opacity: 0.6;
 }
 #project-detail #project-right #project-graphic {
   width: 80%;

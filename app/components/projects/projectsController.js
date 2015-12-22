@@ -89,7 +89,7 @@ portfolioApp.controller('projectsController', ['$scope', '$location', function (
   $scope.currentProject = {
     isOpen: function() {
       if($location.path().length != 0) {
-        if($location.path().substring(1, 8) == 'project') {
+        if($location.path().substring(1, 16) == 'project-details') {
           return true;
         } else {
           return false;
@@ -104,7 +104,7 @@ portfolioApp.controller('projectsController', ['$scope', '$location', function (
 
   $scope.openProject = function(projectName) {
     $scope.currentProject.name = projectName;
-    $location.path('project');
+    $location.path('project-details');
   }
 
   $scope.path = function() { return $location.path(); }
