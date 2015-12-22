@@ -1,6 +1,7 @@
 <div id="project-left" style="background-color: {{ projects[currentProject.name].background }}; color: {{ projects[currentProject.name].color }}">
   <div id="project-title">{{ currentProject.name }}</div>
-  <div id="project-description">{{ projects[currentProject.name].description }}</div>
+  <div id="project-meta">{{ projects[currentProject.name].date }} | {{ projects[currentProject.name].type }}</div>
+  <div id="project-description" ng-bind-html="projects[currentProject.name].description"></div>
   <div custom-hover-colours class="button" data-color="{{ projects[currentProject.name].color }}" data-background="{{ projects[currentProject.name].background }}">VIEW DEMO</div>
 </div>
 <div id="project-right">

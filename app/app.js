@@ -2,4 +2,4 @@
 
 /* Config & routing */
 
-var portfolioApp = angular.module('portfolioApp', ['ngRoute']);
+var portfolioApp = angular.module('portfolioApp', ['ngRoute', 'ngSanitize']);
