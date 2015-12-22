@@ -2,7 +2,7 @@
 
 var portfolioApp = angular.module('portfolioApp');
 
-portfolioApp.controller('projectsController', ['$scope', function ($scope) {
+portfolioApp.controller('projectsController', ['$scope', '$location', function ($scope, $location) {
 
   var rootPath = "/assets/images/projects/";
 
@@ -87,13 +87,26 @@ portfolioApp.controller('projectsController', ['$scope', function ($scope) {
   };
 
   $scope.currentProject = {
-    isOpen: false,
-    name: 'Ocean Blue Software'
+    isOpen: function() {
+      if($location.path().length != 0) {
+        if($location.path().substring(1, 8) == 'project') {
+          return true;
+        } else {
+          return false;
+        }
+      }
+    },
+    name: 'Ocean Blue Software',
+    close: function() {
+      $location.path('');
+    }
   }
 
   $scope.openProject = function(projectName) {
     $scope.currentProject.name = projectName;
-    $scope.currentProject.isOpen = true;
+    $location.path('project');
   }
+
+  $scope.path = function() { return $location.path(); }
 
 }]);

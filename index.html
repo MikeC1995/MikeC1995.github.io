@@ -26,8 +26,8 @@
     <div id="content">
       <div class="section" id="skills-section" ng-controller="skillsController" ng-include="'/app/components/skills/skillsView.html'"></div>
       <div class="section" id="projects-section" ng-controller="projectsController">
-        <div id="project-selection" ng-show="!currentProject.isOpen" ng-include="'/app/components/projects/projectsView.html'"></div>
-        <div id="project-detail" class="clearfix" ng-show="currentProject.isOpen" ng-include="'/app/components/projects/projectDetailsView.html'"></div>
+        <div id="project-selection" ng-show="!currentProject.isOpen()" ng-include="'/app/components/projects/projectsView.html'"></div>
+        <div id="project-detail" class="clearfix" ng-show="currentProject.isOpen()" ng-include="'/app/components/projects/projectDetailsView.html'"></div>
       </div>
       <div class="section" id="contact-section" ng-controller="contactController" ng-show="path() != '/thanks'" ng-include="'/app/components/contact/contactView.html'"></div>
       <div class="shadow" id="thanks-message" ng-controller="contactController" ng-show="path() == '/thanks'" ng-include="'/app/components/contact/thanksView.html'"></div>
