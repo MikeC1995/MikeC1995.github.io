@@ -290,7 +290,7 @@ a {
   font-weight: 300;
   line-height: 200%;
 }
-#project-detail #project-left .button {
+#project-detail #project-left a #demo-button {
   position: absolute;
   bottom: 100px;
   left: calc(50% - 100px);
@@ -298,11 +298,13 @@ a {
   font-size: 20px;
   font-weight: 300;
   letter-spacing: 2px;
+  text-transform: uppercase;
   border: 2px solid #fff;
-  width: 200px;
+  width: auto;
+  padding: 0 15px;
   height: 50px;
 }
-#project-detail #project-left .button:hover {
+#project-detail #project-left #demo-button:hover {
   cursor: hand;
   cursor: pointer;
 }
