@@ -65,7 +65,7 @@
     padding: 0 40px;
 
     #project-title {
-      font-size: 60px;
+      font-size: 50px;
       font-weight: 600;
       padding: 50px 0 20px 0;
     }
@@ -78,8 +78,8 @@
     }
 
     #project-description {
-      padding-top: 40px;
-      font-size: 18px;
+      padding-top: 20px;
+      font-size: 15px;
       font-weight: 300;
       line-height: 200%;
     }
@@ -103,6 +103,18 @@
       cursor: hand;
       cursor: pointer;
     }
+
+    #close-icon-left {
+      display: none;
+      position: absolute;
+      top: 40px;
+      right: 40px;
+      width: 30px;
+      height: auto;
+      cursor: hand;
+      cursor: pointer;
+      z-index: 1001;
+    }
   }
 
   #project-right {
@@ -115,11 +127,11 @@
     box-sizing: border-box;
     background-color: @section-dark;
 
-    #close-icon {
+    #close-icon-right {
       position: absolute;
       top: 40px;
       right: 40px;
-      width: 50px;
+      width: 30px;
       height: auto;
       cursor: hand;
       cursor: pointer;

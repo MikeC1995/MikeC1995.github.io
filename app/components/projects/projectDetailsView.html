@@ -9,8 +9,9 @@
       {{ projects[currentProject.name].buttonText }}
     </div>
   </a>
+  <img id="close-icon-left" src="/assets/images/icons/close-white.png" ng-click="currentProject.close()">
 </div>
 <div id="project-right">
-  <img id="close-icon" src="/assets/images/icons/close.png" ng-click="currentProject.close()">
+  <img id="close-icon-right" src="/assets/images/icons/close.png" ng-click="currentProject.close()">
   <img id="project-graphic" src="{{ projects[currentProject.name].graphic }}">
 </div>

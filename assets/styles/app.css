@@ -140,11 +140,12 @@ a {
 }
 #thanks-message {
   position: fixed;
-  top: 35%;
+  top: 5%;
   left: 25%;
-  bottom: 35%;
   right: 25%;
+  height: 230px;
   background-color: #fff;
+  z-index: 1000;
 }
 #thanks-message a img {
   position: absolute;
@@ -294,7 +295,7 @@ a {
   padding: 0 40px;
 }
 #project-detail #project-left #project-title {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 600;
   padding: 50px 0 20px 0;
 }
@@ -305,8 +306,8 @@ a {
   font-weight: 200;
 }
 #project-detail #project-left #project-description {
-  padding-top: 40px;
-  font-size: 18px;
+  padding-top: 20px;
+  font-size: 15px;
   font-weight: 300;
   line-height: 200%;
 }
@@ -326,6 +327,17 @@ a {
   cursor: hand;
   cursor: pointer;
 }
+#project-detail #project-left #close-icon-left {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  width: 30px;
+  height: auto;
+  cursor: hand;
+  cursor: pointer;
+  z-index: 1001;
+}
 #project-detail #project-right {
   position: relative;
   float: right;
@@ -335,11 +347,11 @@ a {
   box-sizing: border-box;
   background-color: #dddddd;
 }
-#project-detail #project-right #close-icon {
+#project-detail #project-right #close-icon-right {
   position: absolute;
   top: 40px;
   right: 40px;
-  width: 50px;
+  width: 30px;
   height: auto;
   cursor: hand;
   cursor: pointer;
@@ -355,4 +367,49 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
+}
+@media screen and (max-width: 1200px) {
+  #project-detail #project-left {
+    width: 50%;
+  }
+  #project-detail #project-left #project-title {
+    font-size: 40px;
+  }
+  #project-detail #project-left #project-meta {
+    font-size: 20px;
+  }
+  #project-detail #project-left #project-description {
+    font-size: 15px;
+  }
+  #project-detail #project-right {
+    width: 50%;
+  }
+  #project-detail #project-right #close-icon {
+    width: 30px;
+  }
+  #project-detail #project-right #project-graphic {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 900px) {
+  #project-detail #project-left {
+    width: 100%;
+  }
+  #project-detail #project-left #close-icon-left {
+    display: block;
+  }
+  #project-detail #project-right {
+    display: none;
+  }
+}
+@media screen and (max-width: 650px) {
+  #project-detail #project-left #project-title {
+    font-size: 20px;
+  }
+  #project-detail #project-left #project-meta {
+    font-size: 15px;
+  }
+  #project-detail #project-left #project-description {
+    font-size: 12px;
+  }
 }
