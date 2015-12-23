@@ -1,5 +1,12 @@
 <div id="header" class="big-header" boids-canvas>
+  <div id="strapline">
+    <div id="strapline-content">
+      <div id="strap-top">Mike Christensen</div>
+      <div id="strap-centre">FULL STACK DEVELOPER</div>
+    </div>
+  </div>
   <div id="navigation">
+    <img id="nav-menu" src="/assets/images/icons/menu.png" ng-click="toggleNav()">
     <div id="social-networks">
       <!-- target=_blank opens in new tab -->
       <a href="https://www.linkedin.com/in/mikescottchristensen" target="_blank">
@@ -9,16 +16,8 @@
         <img src="/assets/images/github.png">
       </a>
     </div>
-    <ul id="nav-links">
+    <ul id="nav-links" ng-class="{'nav-open': nav.state}">
       <li ng-repeat="(item, link) in navItems"><a scroll-to="{{ link }}" href="{{ link }}">{{ item }}</a></li>
     </ul>
-    <img id="nav-menu" src="/assets/images/icons/menu.png">
-  </div>
-
-  <div id="strapline">
-    <div id="strapline-content">
-      <div id="strap-top">Mike Christensen</div>
-      <div id="strap-centre">FULL STACK DEVELOPER</div>
-    </div>
   </div>
 </div>
