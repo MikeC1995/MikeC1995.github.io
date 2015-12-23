@@ -1,0 +1,42 @@
+@media screen and (max-width: 900px) {
+  .section-title {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #contact-section {
+    background-color: @section-light;
+    padding-bottom: 40px;
+
+    .section-title {
+      font-weight: 400;
+    }
+
+    input, textarea {
+      display: block;
+      width: 80%;
+    }
+
+    input[type="submit"] {
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #contact-section {
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    .section-title {
+      font-size: 18px;
+    }
+    .section-text {
+      font-size: 15px;
+    }
+
+    input[type="submit"] {
+      font-size: 14px;
+    }
+  }
+}

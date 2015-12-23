@@ -33,6 +33,21 @@
 }
 
 @media screen and (max-width: 900px) {
+  #project-selection {
+    .projectList {
+      text-align: center;
+      padding: 20px 0;
+      .project {
+        width: 150px;
+        height: 150px;
+
+        .description-overlay span {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
   #project-detail {
 
     #project-left {
@@ -47,24 +62,23 @@
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
 
   #project-detail {
-
     #project-left {
-      //min-width: 100px;
-
       #project-title {
         font-size: 20px;
       }
-
       #project-meta {
         font-size: 15px;
       }
-
       #project-description {
         font-size: 12px;
       }
     }
   }
+}
+
+@media screen and (max-width: 350px) {
+
 }
