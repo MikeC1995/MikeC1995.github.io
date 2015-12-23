@@ -1,10 +1,4 @@
 <div id="header" class="big-header" boids-canvas>
-  <div id="strapline">
-    <div id="strapline-content">
-      <div id="strap-top">Mike Christensen</div>
-      <div id="strap-centre">FULL STACK DEVELOPER</div>
-    </div>
-  </div>
   <div id="navigation">
     <img id="nav-menu" src="/assets/images/icons/menu.png" ng-click="toggleNav()">
     <div id="social-networks">
@@ -19,5 +13,11 @@
     <ul id="nav-links" ng-class="{'nav-open': nav.state}">
       <li ng-repeat="(item, link) in navItems"><a scroll-to="{{ link }}" href="{{ link }}">{{ item }}</a></li>
     </ul>
+  </div>
+  <div id="strapline">
+    <div id="strapline-content">
+      <div id="strap-top">Mike Christensen</div>
+      <div id="strap-centre">FULL STACK DEVELOPER</div>
+    </div>
   </div>
 </div>
