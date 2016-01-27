@@ -25,7 +25,23 @@
     background-color: #34495e;
   }
 }
+@-webkit-keyframes nav_fadein {
+  from {
+    background-color: none;
+  }
+  to {
+    background-color: #34495e;
+  }
+}
 @keyframes show_project {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+@-webkit-keyframes show_project {
   from {
     opacity: 0;
   }
@@ -41,7 +57,23 @@
     transform: translateX(0%);
   }
 }
+@-webkit-keyframes show_project_left {
+  0% {
+    transform: translateX(-150%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
 @keyframes show_project_right {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+@-webkit-keyframes show_project_right {
   from {
     opacity: 0;
   }
@@ -440,6 +472,7 @@ a {
 #project-detail #project-left #project-title {
   transform: translateX(-150%);
   animation: show_project_left 1s cubic-bezier(0.13, 0.42, 0.13, 0.92) 0.3s forwards;
+  -webkit-animation: show_project_left 1s cubic-bezier(0.13, 0.42, 0.13, 0.92) 0.3s forwards;
   font-size: 50px;
   font-weight: 600;
   padding: 50px 0 20px 0;
@@ -447,6 +480,7 @@ a {
 #project-detail #project-left #project-meta {
   transform: translateX(-150%);
   animation: show_project_left 1s cubic-bezier(0.13, 0.42, 0.13, 0.92) 0.4s forwards;
+  -webkit-animation: show_project_left 1s cubic-bezier(0.13, 0.42, 0.13, 0.92) 0.4s forwards;
   font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -455,6 +489,7 @@ a {
 #project-detail #project-left #project-description {
   transform: translateX(-150%);
   animation: show_project_left 1s cubic-bezier(0.13, 0.42, 0.13, 0.92) 0.5s forwards;
+  -webkit-animation: show_project_left 1s cubic-bezier(0.13, 0.42, 0.13, 0.92) 0.5s forwards;
   padding-top: 20px;
   font-size: 15px;
   font-weight: 300;
@@ -463,6 +498,7 @@ a {
 #project-detail #project-left a #demo-button {
   transform: translateX(-150%);
   animation: show_project_left 1s cubic-bezier(0.13, 0.42, 0.13, 0.92) 0.6s forwards;
+  -webkit-animation: show_project_left 1s cubic-bezier(0.13, 0.42, 0.13, 0.92) 0.6s forwards;
   height: 50px;
   width: auto;
   line-height: 50px;
@@ -511,6 +547,7 @@ a {
 }
 #project-detail #project-right #project-graphic {
   animation: show_project_right 1s ease-out 0.7s forwards;
+  -webkit-animation: show_project_right 1s ease-out 0.7s forwards;
   opacity: 0;
   width: 80%;
   height: auto;

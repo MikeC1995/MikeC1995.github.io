@@ -2,8 +2,16 @@
     from { background-color: none; }
     to { background-color: @header; }
 }
+@-webkit-keyframes nav_fadein {
+    from { background-color: none; }
+    to { background-color: @header; }
+}
 
 @keyframes show_project {
+  from { opacity: 0; }
+  to { opacity: 100; }
+}
+@-webkit-keyframes show_project {
   from { opacity: 0; }
   to { opacity: 100; }
 }
@@ -16,7 +24,20 @@
     transform: translateX(0%);
   }
 }
+@-webkit-keyframes show_project_left {
+  0% {
+    transform: translateX(-150%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
 @keyframes show_project_right {
+  from { opacity: 0; }
+  to { opacity: 100; }
+}
+@-webkit-keyframes show_project_right {
   from { opacity: 0; }
   to { opacity: 100; }
 }
