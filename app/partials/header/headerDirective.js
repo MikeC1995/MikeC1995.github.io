@@ -11,7 +11,7 @@ portfolioApp.directive('header', function ($window) {
     controller: 'headerController',
     controllerAs: 'header',
     link: function (scope, element, attrs) {
-      var offsetTop = element.offset().top + element.height() - element.find('#navigation').outerHeight();
+      var offsetTop = element.offset().top + element.height() - element.find('#navigation').outerHeight() - 20;
       $win.on('scroll', function (e) {
         if ($win.scrollTop() <= offsetTop) {
           element.children().first().addClass('big-header');

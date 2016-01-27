@@ -78,13 +78,14 @@
       line-height: 38px;
     }
   }
-
   &:not(.big-header) {
+
     #strapline-content {
       display: none;
     }
     #navigation {
-      background-color: @header;
+      animation: nav_fadein 0.3s forwards ease-out;
+      -webkit-animation: nav_fadein 0.3s forwards ease-out;
     }
     canvas {
       display: none;

@@ -17,6 +17,38 @@
   font-weight: 700;
   src: url('/assets/fonts/Roboto-Bold.woff') format('woff'), url('/assets/fonts/Roboto-Bold.ttf') format('ttf');
 }
+@keyframes nav_fadein {
+  from {
+    background-color: none;
+  }
+  to {
+    background-color: #34495e;
+  }
+}
+@keyframes show_project {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+@keyframes show_project_left {
+  0% {
+    transform: translateX(-150%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes show_project_right {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
 /* General styles */
 html,
 body {
@@ -283,7 +315,8 @@ a {
   display: none;
 }
 #header:not(.big-header) #navigation {
-  background-color: #34495e;
+  animation: nav_fadein 0.3s forwards ease-out;
+  -webkit-animation: nav_fadein 0.3s forwards ease-out;
 }
 #header:not(.big-header) canvas {
   display: none;
@@ -385,6 +418,7 @@ a {
   width: auto;
 }
 #project-detail {
+  animation: show_project 0.3s ease-out forwards;
   position: fixed;
   top: 0;
   left: 0;
@@ -401,25 +435,34 @@ a {
   color: #fff;
   box-sizing: border-box;
   padding: 0 40px;
+  overflow-y: hidden;
 }
 #project-detail #project-left #project-title {
+  transform: translateX(-150%);
+  animation: show_project_left 1s cubic-bezier(0.13, 0.42, 0.13, 0.92) 0.3s forwards;
   font-size: 50px;
   font-weight: 600;
   padding: 50px 0 20px 0;
 }
 #project-detail #project-left #project-meta {
+  transform: translateX(-150%);
+  animation: show_project_left 1s cubic-bezier(0.13, 0.42, 0.13, 0.92) 0.4s forwards;
   font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-weight: 200;
 }
 #project-detail #project-left #project-description {
+  transform: translateX(-150%);
+  animation: show_project_left 1s cubic-bezier(0.13, 0.42, 0.13, 0.92) 0.5s forwards;
   padding-top: 20px;
   font-size: 15px;
   font-weight: 300;
   line-height: 200%;
 }
 #project-detail #project-left a #demo-button {
+  transform: translateX(-150%);
+  animation: show_project_left 1s cubic-bezier(0.13, 0.42, 0.13, 0.92) 0.6s forwards;
   height: 50px;
   width: auto;
   line-height: 50px;
@@ -467,6 +510,8 @@ a {
   opacity: 0.6;
 }
 #project-detail #project-right #project-graphic {
+  animation: show_project_right 1s ease-out 0.7s forwards;
+  opacity: 0;
   width: 80%;
   height: auto;
   position: absolute;
