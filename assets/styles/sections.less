@@ -68,24 +68,31 @@
     margin-right: auto;
     padding-top: 20px;
     padding-bottom: 20px;
+    &:focus {
+      outline: none;
+    }
   }
 
   input:not([type="submit"]), textarea {
     margin-top: 10px;
     margin-bottom: 10px;
     padding-left: 20px;
+    box-sizing: border-box;
+    border: 0px solid @header;
+    border-radius: 5px;
   }
 
   input[type="submit"] {
     text-transform: uppercase;
     background-color: inherit;
-    border: 2px solid #34495e;
+    border: 1px solid #34495e;
     color: #34495e;
-    font-size: 22px;
+    font-size: 18px;
     letter-spacing: 2px;
+    border-radius: 5px;
   }
   input[type="submit"]:hover {
-    background-color: #34495e;
+    animation: nav_fadein 0.5s ease-out forwards;
     color: #fff;
     cursor: hand;
     cursor: pointer;
@@ -115,6 +122,10 @@
       height: auto;
       cursor: pointer;
       cursor: hand;
+      opacity: 0.8;
+      &:hover {
+        opacity: 1;
+      }
     }
   }
 }

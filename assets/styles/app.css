@@ -177,22 +177,30 @@ a {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+#contact-section input:focus,
+#contact-section textarea:focus {
+  outline: none;
+}
 #contact-section input:not([type="submit"]),
 #contact-section textarea {
   margin-top: 10px;
   margin-bottom: 10px;
   padding-left: 20px;
+  box-sizing: border-box;
+  border: 0px solid #34495e;
+  border-radius: 5px;
 }
 #contact-section input[type="submit"] {
   text-transform: uppercase;
   background-color: inherit;
-  border: 2px solid #34495e;
+  border: 1px solid #34495e;
   color: #34495e;
-  font-size: 22px;
+  font-size: 18px;
   letter-spacing: 2px;
+  border-radius: 5px;
 }
 #contact-section input[type="submit"]:hover {
-  background-color: #34495e;
+  animation: nav_fadein 0.5s ease-out forwards;
   color: #fff;
   cursor: hand;
   cursor: pointer;
@@ -218,6 +226,10 @@ a {
   height: auto;
   cursor: pointer;
   cursor: hand;
+  opacity: 0.8;
+}
+#thanks-message a img:hover {
+  opacity: 1;
 }
 @media screen and (max-width: 900px) {
   .section-title {
@@ -280,36 +292,50 @@ a {
 }
 #header #navigation {
   position: fixed;
+  display: table;
   top: 0;
   width: 100%;
-  padding: 20px 50px;
+  padding: 10px 50px;
   box-sizing: border-box;
   z-index: 1001;
 }
 #header #navigation #nav-menu {
   display: none;
 }
-#header #social-networks {
-  float: left;
-  margin-top: 5px;
+#header #navigation a {
+  display: inline-block;
+  height: 100%;
+  position: relative;
 }
-#header #social-networks img {
-  height: 25px;
+#header #navigation a img {
+  padding-top: calc(50% - 13px);
+  height: 26px;
   padding-right: 40px;
+  opacity: 0.9;
 }
-#header #nav-links {
+#header #navigation a img:hover {
+  opacity: 1;
+}
+#header #navigation #nav-links {
   float: right;
   list-style-type: none;
   text-transform: uppercase;
   font-size: 16px;
   letter-spacing: 1px;
 }
-#header #nav-links li {
+#header #navigation #nav-links li {
   display: inline-block;
   margin-left: 20px;
+  box-sizing: border-box;
+  border-bottom: 2px solid transparent;
 }
-#header #nav-links li a {
+#header #navigation #nav-links li:hover {
+  border-bottom: 2px solid #fff;
+}
+#header #navigation #nav-links li a {
   padding: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
   color: #fff;
 }
 #header.big-header #strapline {
