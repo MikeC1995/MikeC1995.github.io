@@ -11,15 +11,32 @@
     }
     &:not(.big-header) {
       #navigation {
-        height: 50px;
+        height: 55px;
       }
     }
     #navigation {
+      display: table;
       padding: 0;
-      #social-networks {
+      padding-left: 20px;
+      text-align: left;
+
+      .mobile-nav-label {
+        display: table-cell;
+        vertical-align: middle;
+        height: 100%;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        &.nav-open, &.hidden {
+          display: none;
+        }
+      }
+
+      .social-network {
         display: none;
       }
       #nav-links {
+        width: 100%;
         &:not(.nav-open) {
           display: none;
         }
@@ -30,7 +47,6 @@
         padding-left: 0;
         padding-right: 20px;
         margin: 0;
-        //box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
         box-shadow: 0 10px 20px -10px rgba(0,0,0,0.19), 0 10px 6px -6px rgba(0,0,0,0.23);
         li {
           display: block;

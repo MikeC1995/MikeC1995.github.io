@@ -299,6 +299,9 @@ a {
   box-sizing: border-box;
   z-index: 1001;
 }
+#header #navigation .mobile-nav-label {
+  display: none;
+}
 #header #navigation #nav-menu {
   display: none;
 }
@@ -390,15 +393,31 @@ a {
     height: 200px;
   }
   #header:not(.big-header) #navigation {
-    height: 50px;
+    height: 55px;
   }
   #header #navigation {
+    display: table;
     padding: 0;
+    padding-left: 20px;
+    text-align: left;
   }
-  #header #navigation #social-networks {
+  #header #navigation .mobile-nav-label {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  #header #navigation .mobile-nav-label.nav-open,
+  #header #navigation .mobile-nav-label.hidden {
+    display: none;
+  }
+  #header #navigation .social-network {
     display: none;
   }
   #header #navigation #nav-links {
+    width: 100%;
     position: relative;
     z-index: 1001;
     font-size: 18px;

@@ -16,9 +16,11 @@ portfolioApp.directive('header', function ($window) {
         if ($win.scrollTop() <= offsetTop) {
           element.children().first().addClass('big-header');
           element.children().first().children().first().removeClass('shadow');
+          element.children().first().children().first().children().first().addClass('hidden');
         } else {
           element.children().first().removeClass('big-header');
           element.children().first().children().first().addClass('shadow');
+          element.children().first().children().first().children().first().removeClass('hidden');
         }
       });
     }
