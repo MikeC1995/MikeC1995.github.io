@@ -7,12 +7,6 @@ portfolioApp.controller('skillsController', ['$scope', function ($scope) {
   var rootPath = "/assets/images/svg/";
   // Set nav items
   $scope.skillsItems = {
-    'languages': {
-      'C': rootPath + 'c.svg',
-      'C++': rootPath + 'cpp.svg',
-      'Java': rootPath + 'java.svg',
-      'Python': rootPath + 'python.svg'
-    },
     'web': {
       'HTML5': rootPath + 'html5.svg',
       'CSS3': rootPath + 'css3.svg',
@@ -21,7 +15,14 @@ portfolioApp.controller('skillsController', ['$scope', function ($scope) {
       'jQuery': rootPath + 'jquery.svg',
       'AngularJS': rootPath + 'angular.svg',
       'Node.js': rootPath + 'node.svg',
+      'MongoDB': rootPath + 'mongodb.svg',
       'PostgreSQL': rootPath + 'postgresql.svg'
+    },
+    'languages': {
+      'C': rootPath + 'c.svg',
+      'C++': rootPath + 'cpp.svg',
+      'Java': rootPath + 'java.svg',
+      'Python': rootPath + 'python.svg'
     },
     'tools': {
       'Linux': rootPath + 'linux.svg',
