@@ -7,6 +7,17 @@ portfolioApp.controller('projectsController', ['$scope', '$location', function (
   var rootPath = "/assets/images/projects/";
 
   $scope.projects = {
+    'Tripmappr': {
+      thumb: rootPath + 'tripmappr/thumb.png',
+      graphic: rootPath + 'tripmappr/graphic.png',
+      date: 'Ongoing',
+      type: 'web app',
+      description: "I am currently developing Tripmappr, a web app which allows travellers to visualise their trip photos on a map. This application is being developed using Node.js, AngularJS and MongoDB.<br><br>If you're interested, be sure to check out the site and sign up to be the first to know when we launch!",
+      demoPath: 'http://www.tripmappr.com/',
+      buttonText: 'visit site',
+      background: '#512da8',
+      color: '#fff'
+    },
     'Ocean Blue Software': {
       thumb: rootPath + 'oceanblue/thumb.png',
       graphic: rootPath + 'oceanblue/graphic.png',
@@ -29,14 +40,14 @@ portfolioApp.controller('projectsController', ['$scope', '$location', function (
       background: '#1B5E20',
       color: '#fff'
     },
-    'Language Pear': {
+    'LanguagePear': {
       thumb: rootPath + 'languagepear/thumb.png',
       graphic: rootPath + 'languagepear/graphic.png',
       date: 'current',
       type: 'website/mobile app',
-      description: "I am currently developing Language Pear, a cross-platform language practice app. Aimed at language students, the app provides a chat-based platform to practice speaking your chosen language in real-time, doing away with slow-to-respond pen pals or email buddies.<br><br>The front-end of the app is being developed with web development technologies (HTML5, Less, AngularJS) with a Node.js backend and PostgreSQL database.",
-      demoPath: '',
-      buttonText: '',
+      description: "I have been contracted to develop LanguagePear, a cross-platform language practice app. Aimed at language students, the app provides a chat-based platform to practice speaking your chosen language in real-time, doing away with slow-to-respond pen pals or email buddies.<br><br>The front-end of the app is being developed with web development technologies (HTML5, Less, AngularJS) with a Node.js backend and PostgreSQL database.",
+      demoPath: 'http://www.languagepear.com/',
+      buttonText: 'visit site',
       background: '#27ae60',
       color: '#fff'
     },
